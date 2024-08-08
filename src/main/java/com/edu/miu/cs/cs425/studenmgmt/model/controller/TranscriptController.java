@@ -1,18 +1,10 @@
-//package com.edu.miu.cs.cs425.studenmgmt.model.Controller;
-//
-//import com.edu.miu.cs.cs425.studenmgmt.model.Transcript;
-//import com.edu.miu.cs.cs425.studenmgmt.model.ServiceImp.TranscriptImp;
-//import com.edu.miu.cs.cs425.studenmgmt.model.Exception.TranscriptNotFoundException;
-//import org.springframework.beans.factory.annotation.Autowired;
-//import org.springframework.http.HttpStatus;
-//import org.springframework.web.bind.annotation.*;
-//
-//import java.util.List;
-//
-//@RestController
-//@RequestMapping("/transcripts")
-//public class TranscriptController {
-//
+package com.edu.miu.cs.cs425.studenmgmt.model.controller;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping("/transcripts")
+public class TranscriptController {
+
 //    @Autowired
 //    private TranscriptImp transcriptService;
 //
@@ -22,7 +14,7 @@
 //    public Transcript createTranscript(@RequestBody Transcript transcript) {
 //        try {
 //            return transcriptService.saveTranscript(transcript);
-//        } catch (Exception e) {
+//        } catch (exception e) {
 //            throw new RuntimeException("Error creating transcript: " + e.getMessage());
 //        }
 //    }
@@ -51,7 +43,7 @@
 //            return transcriptService.updateTranscript(transcript, id);
 //        } catch (TranscriptNotFoundException e) {
 //            throw new TranscriptNotFoundException("Cannot update. Transcript not found with ID: " + id);
-//        } catch (Exception e) {
+//        } catch (exception e) {
 //            throw new RuntimeException("Error updating transcript: " + e.getMessage());
 //        }
 //    }
@@ -64,8 +56,8 @@
 //            transcriptService.deleteById(id);
 //        } catch (TranscriptNotFoundException e) {
 //            throw new TranscriptNotFoundException("Cannot delete. Transcript not found with ID: " + id);
-//        } catch (Exception e) {
+//        } catch (exception e) {
 //            throw new RuntimeException("Error deleting transcript: " + e.getMessage());
 //        }
 //    }
-//}
+}

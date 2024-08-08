@@ -1,18 +1,10 @@
-//package com.edu.miu.cs.cs425.studenmgmt.model.Controller;
-//
-//import com.edu.miu.cs.cs425.studenmgmt.model.Course;
-//import com.edu.miu.cs.cs425.studenmgmt.model.ServiceImp.CourseImp;
-//import com.edu.miu.cs.cs425.studenmgmt.model.Exception.CourseNotFoundException;
-//import org.springframework.beans.factory.annotation.Autowired;
-//import org.springframework.http.HttpStatus;
-//import org.springframework.web.bind.annotation.*;
-//
-//import java.util.List;
-//
-//@RestController
-//@RequestMapping("/courses")
-//public class CourseController {
-//
+package com.edu.miu.cs.cs425.studenmgmt.model.controller;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping("/courses")
+public class CourseController {
+
 //    @Autowired
 //    private CourseImp courseService;
 //
@@ -22,7 +14,7 @@
 //    public Course createCourse(@RequestBody Course course) {
 //        try {
 //            return courseService.saveCourse(course);
-//        } catch (Exception e) {
+//        } catch (exception e) {
 //            throw new RuntimeException("Error creating course: " + e.getMessage());
 //        }
 //    }
@@ -47,7 +39,7 @@
 //            return courseService.updateCourse(course, id);
 //        } catch (CourseNotFoundException e) {
 //            throw new CourseNotFoundException("Cannot update. Course not found with ID: " + id);
-//        } catch (Exception e) {
+//        } catch (exception e) {
 //            throw new RuntimeException("Error updating course: " + e.getMessage());
 //        }
 //    }
@@ -60,8 +52,8 @@
 //            courseService.deleteById(id);
 //        } catch (CourseNotFoundException e) {
 //            throw new CourseNotFoundException("Cannot delete. Course not found with ID: " + id);
-//        } catch (Exception e) {
+//        } catch (exception e) {
 //            throw new RuntimeException("Error deleting course: " + e.getMessage());
 //        }
 //    }
-//}
+}

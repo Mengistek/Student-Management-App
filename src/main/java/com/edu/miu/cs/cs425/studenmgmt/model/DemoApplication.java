@@ -1,11 +1,11 @@
-package com.edu.miu.cs.cs425.studenmgmt.model.MySQL;
+package com.edu.miu.cs.cs425.studenmgmt.model;
 
-import com.edu.miu.cs.cs425.studenmgmt.model.Classroom;
-import com.edu.miu.cs.cs425.studenmgmt.model.Course;
-import com.edu.miu.cs.cs425.studenmgmt.model.Repositories.ClassroomRepository;
-import com.edu.miu.cs.cs425.studenmgmt.model.Repositories.CourseRepository;
-import com.edu.miu.cs.cs425.studenmgmt.model.Student;
-import com.edu.miu.cs.cs425.studenmgmt.model.Transcript;
+import com.edu.miu.cs.cs425.studenmgmt.model.repository.ClassroomRepository;
+import com.edu.miu.cs.cs425.studenmgmt.model.repository.CourseRepository;
+import com.edu.miu.cs.cs425.studenmgmt.model.model.Classroom;
+import com.edu.miu.cs.cs425.studenmgmt.model.model.Course;
+import com.edu.miu.cs.cs425.studenmgmt.model.model.Student;
+import com.edu.miu.cs.cs425.studenmgmt.model.model.Transcript;
 import com.edu.miu.cs.cs425.studenmgmt.model.studentMgmt.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;

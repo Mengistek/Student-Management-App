@@ -1,6 +1,6 @@
-package com.edu.miu.cs.cs425.studenmgmt.model.ServiceImp;
+package com.edu.miu.cs.cs425.studenmgmt.model.service.ServiceImp;
 
-import com.edu.miu.cs.cs425.studenmgmt.model.Student;
+import com.edu.miu.cs.cs425.studenmgmt.model.model.Student;
 import java.util.List;
 
 public interface StudentImp {

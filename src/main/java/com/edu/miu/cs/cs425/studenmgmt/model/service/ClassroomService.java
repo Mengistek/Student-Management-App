@@ -1,9 +1,9 @@
-package com.edu.miu.cs.cs425.studenmgmt.model.ServiceLayer;
+package com.edu.miu.cs.cs425.studenmgmt.model.service;
 
-import com.edu.miu.cs.cs425.studenmgmt.model.Classroom;
-import com.edu.miu.cs.cs425.studenmgmt.model.Exception.ClassroomNotFoundException;
-import com.edu.miu.cs.cs425.studenmgmt.model.Repositories.ClassroomRepository;
-import com.edu.miu.cs.cs425.studenmgmt.model.ServiceImp.ClassroomImp;
+import com.edu.miu.cs.cs425.studenmgmt.model.model.Classroom;
+import com.edu.miu.cs.cs425.studenmgmt.model.exception.ClassroomNotFoundException;
+import com.edu.miu.cs.cs425.studenmgmt.model.repository.ClassroomRepository;
+import com.edu.miu.cs.cs425.studenmgmt.model.service.ServiceImp.ClassroomImp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.dao.EmptyResultDataAccessException;

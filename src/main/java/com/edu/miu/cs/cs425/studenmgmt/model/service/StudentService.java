@@ -1,8 +1,8 @@
-package com.edu.miu.cs.cs425.studenmgmt.model.ServiceLayer;
+package com.edu.miu.cs.cs425.studenmgmt.model.service;
 
-import com.edu.miu.cs.cs425.studenmgmt.model.ServiceImp.StudentImp;
-import com.edu.miu.cs.cs425.studenmgmt.model.Student;
-import com.edu.miu.cs.cs425.studenmgmt.model.Exception.StudentNotFoundException;
+import com.edu.miu.cs.cs425.studenmgmt.model.service.ServiceImp.StudentImp;
+import com.edu.miu.cs.cs425.studenmgmt.model.model.Student;
+import com.edu.miu.cs.cs425.studenmgmt.model.exception.StudentNotFoundException;
 import com.edu.miu.cs.cs425.studenmgmt.model.studentMgmt.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;

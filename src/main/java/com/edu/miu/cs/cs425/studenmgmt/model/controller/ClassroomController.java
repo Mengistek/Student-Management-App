@@ -1,18 +1,8 @@
-//package com.edu.miu.cs.cs425.studenmgmt.model.Controller;
-//
-//import com.edu.miu.cs.cs425.studenmgmt.model.Classroom;
-//import com.edu.miu.cs.cs425.studenmgmt.model.ServiceImp.ClassroomImp;
-//import com.edu.miu.cs.cs425.studenmgmt.model.Exception.ClassroomNotFoundException;
-//import org.springframework.beans.factory.annotation.Autowired;
-//import org.springframework.http.HttpStatus;
-//import org.springframework.web.bind.annotation.*;
-//
-//import java.util.List;
-//
-//@RestController
-//@RequestMapping("/classrooms")
-//public class ClassroomController {
-//
+package com.edu.miu.cs.cs425.studenmgmt.model.controller;
+import org.springframework.web.bind.annotation.*;
+
+public class ClassroomController {
+
 //    @Autowired
 //    private ClassroomImp classroomService;
 //
@@ -22,7 +12,7 @@
 //    public Classroom createClassroom(@RequestBody Classroom classroom) {
 //        try {
 //            return classroomService.saveClassroom(classroom);
-//        } catch (Exception e) {
+//        } catch (exception e) {
 //            throw new RuntimeException("Error creating classroom: " + e.getMessage());
 //        }
 //    }
@@ -47,7 +37,7 @@
 //            return classroomService.updateClassroom(classroom, id);
 //        } catch (ClassroomNotFoundException e) {
 //            throw new ClassroomNotFoundException("Cannot update. Classroom not found with ID: " + id);
-//        } catch (Exception e) {
+//        } catch (exception e) {
 //            throw new RuntimeException("Error updating classroom: " + e.getMessage());
 //        }
 //    }
@@ -60,8 +50,7 @@
 //            classroomService.deleteClassroom(id);
 //        } catch (ClassroomNotFoundException e) {
 //            throw new ClassroomNotFoundException("Cannot delete. Classroom not found with ID: " + id);
-//        } catch (Exception e) {
+//        } catch (exception e) {
 //            throw new RuntimeException("Error deleting classroom: " + e.getMessage());
 //        }
-//    }
-//}
+    }

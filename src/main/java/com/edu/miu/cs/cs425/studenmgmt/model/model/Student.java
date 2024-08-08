@@ -1,5 +1,6 @@
-package com.edu.miu.cs.cs425.studenmgmt.model;
+package com.edu.miu.cs.cs425.studenmgmt.model.model;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -29,9 +30,11 @@ public class Student {
 
     @OneToOne(cascade =CascadeType.ALL)
     @JoinColumn(name= "transcript_id",referencedColumnName = "transcriptId")
+    @JsonManagedReference
     private Transcript transcript;
     @ManyToOne
     @JoinColumn(name="classroom_id")
+    @JsonManagedReference
     private Classroom classroom;
     @ManyToMany
     @JoinTable(
@@ -39,6 +42,7 @@ public class Student {
             joinColumns = @JoinColumn(name = "student_id"),
             inverseJoinColumns = @JoinColumn(name = "course_id")
     )
+    @JsonManagedReference
     private List<Course> courses;
 
     public Student(Long studentId, String studentNumber,

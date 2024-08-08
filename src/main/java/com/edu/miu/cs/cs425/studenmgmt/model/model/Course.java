@@ -1,5 +1,6 @@
-package com.edu.miu.cs.cs425.studenmgmt.model;
+package com.edu.miu.cs.cs425.studenmgmt.model.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -21,6 +22,7 @@ public class Course {
     private String courseName;
 
     @ManyToMany(mappedBy ="courses" )
+    @JsonBackReference
     private List<Student> students;
 
 

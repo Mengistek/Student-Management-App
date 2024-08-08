@@ -1,5 +1,6 @@
-package com.edu.miu.cs.cs425.studenmgmt.model;
+package com.edu.miu.cs.cs425.studenmgmt.model.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -20,6 +21,7 @@ public class Classroom {
     private String roomNumber;
 
     @OneToMany(mappedBy = "classroom",cascade = CascadeType.ALL)
+    @JsonBackReference
     private List<Student> students;
 
 

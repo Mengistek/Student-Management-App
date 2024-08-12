@@ -1,7 +1,7 @@
 package com.edu.miu.cs.cs425.studenmgmt.model.Controller;
 
-import com.edu.miu.cs.cs425.studenmgmt.model.ServiceLayer.StudentService;
-import com.edu.miu.cs.cs425.studenmgmt.model.Student;
+import com.edu.miu.cs.cs425.studenmgmt.model.service.StudentService;
+import com.edu.miu.cs.cs425.studenmgmt.model.model.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

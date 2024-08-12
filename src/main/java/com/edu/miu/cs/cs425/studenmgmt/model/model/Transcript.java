@@ -1,4 +1,4 @@
-package com.edu.miu.cs.cs425.studenmgmt.model;
+package com.edu.miu.cs.cs425.studenmgmt.model.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

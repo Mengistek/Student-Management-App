@@ -1,8 +1,8 @@
-package com.edu.miu.cs.cs425.studenmgmt.model.ServiceLayer;
+package com.edu.miu.cs.cs425.studenmgmt.model.service;
 
-import com.edu.miu.cs.cs425.studenmgmt.model.Course;
+import com.edu.miu.cs.cs425.studenmgmt.model.model.Course;
 import com.edu.miu.cs.cs425.studenmgmt.model.Exception.CourseNotFoundException;
-import com.edu.miu.cs.cs425.studenmgmt.model.Repositories.CourseRepository;
+import com.edu.miu.cs.cs425.studenmgmt.model.repository.CourseRepository;
 import com.edu.miu.cs.cs425.studenmgmt.model.ServiceImp.CourseImp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;

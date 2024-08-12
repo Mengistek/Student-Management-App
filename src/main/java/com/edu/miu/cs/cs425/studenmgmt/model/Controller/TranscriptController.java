@@ -1,6 +1,6 @@
 //package com.edu.miu.cs.cs425.studenmgmt.model.Controller;
 //
-//import com.edu.miu.cs.cs425.studenmgmt.model.Transcript;
+//import com.edu.miu.cs.cs425.studenmgmt.model.model.Transcript;
 //import com.edu.miu.cs.cs425.studenmgmt.model.ServiceImp.TranscriptImp;
 //import com.edu.miu.cs.cs425.studenmgmt.model.Exception.TranscriptNotFoundException;
 //import org.springframework.beans.factory.annotation.Autowired;

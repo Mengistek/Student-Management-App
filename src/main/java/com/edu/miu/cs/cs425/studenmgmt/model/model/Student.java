@@ -1,5 +1,6 @@
-package com.edu.miu.cs.cs425.studenmgmt.model;
+package com.edu.miu.cs.cs425.studenmgmt.model.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,11 +15,15 @@ public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long studentId;
+
     @Column(nullable = false, unique = true)
     private String studentNumber;
+
     @Column(nullable = false)
     private String firstName;
+
     private String MiddleName;
+
     @Column(nullable = false)
     private String lastName;
 
@@ -29,9 +34,11 @@ public class Student {
 
     @OneToOne(cascade =CascadeType.ALL)
     @JoinColumn(name= "transcript_id",referencedColumnName = "transcriptId")
+    @JsonBackReference
     private Transcript transcript;
     @ManyToOne
     @JoinColumn(name="classroom_id")
+    @JsonBackReference
     private Classroom classroom;
     @ManyToMany
     @JoinTable(
@@ -39,6 +46,7 @@ public class Student {
             joinColumns = @JoinColumn(name = "student_id"),
             inverseJoinColumns = @JoinColumn(name = "course_id")
     )
+    @JsonBackReference
     private List<Course> courses;
 
     public Student(Long studentId, String studentNumber,

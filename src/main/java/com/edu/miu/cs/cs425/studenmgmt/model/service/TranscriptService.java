@@ -1,8 +1,8 @@
-package com.edu.miu.cs.cs425.studenmgmt.model.ServiceLayer;
+package com.edu.miu.cs.cs425.studenmgmt.model.service;
 
-import com.edu.miu.cs.cs425.studenmgmt.model.Transcript;
+import com.edu.miu.cs.cs425.studenmgmt.model.model.Transcript;
 import com.edu.miu.cs.cs425.studenmgmt.model.Exception.TranscriptNotFoundException;
-import com.edu.miu.cs.cs425.studenmgmt.model.Repositories.TranscriptRepository;
+import com.edu.miu.cs.cs425.studenmgmt.model.repository.TranscriptRepository;
 import com.edu.miu.cs.cs425.studenmgmt.model.ServiceImp.TranscriptImp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;

@@ -1,6 +1,6 @@
 package com.edu.miu.cs.cs425.studenmgmt.model.ServiceImp;
 
-import com.edu.miu.cs.cs425.studenmgmt.model.Course;
+import com.edu.miu.cs.cs425.studenmgmt.model.model.Course;
 
 import java.util.List;
 

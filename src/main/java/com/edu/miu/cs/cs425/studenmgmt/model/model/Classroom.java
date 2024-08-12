@@ -1,5 +1,6 @@
-package com.edu.miu.cs.cs425.studenmgmt.model;
+package com.edu.miu.cs.cs425.studenmgmt.model.model;
 
+import com.edu.miu.cs.cs425.studenmgmt.model.model.Student;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

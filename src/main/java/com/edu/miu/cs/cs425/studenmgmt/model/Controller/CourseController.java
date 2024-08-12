@@ -1,6 +1,6 @@
 //package com.edu.miu.cs.cs425.studenmgmt.model.Controller;
 //
-//import com.edu.miu.cs.cs425.studenmgmt.model.Course;
+//import com.edu.miu.cs.cs425.studenmgmt.model.model.Course;
 //import com.edu.miu.cs.cs425.studenmgmt.model.ServiceImp.CourseImp;
 //import com.edu.miu.cs.cs425.studenmgmt.model.Exception.CourseNotFoundException;
 //import org.springframework.beans.factory.annotation.Autowired;
